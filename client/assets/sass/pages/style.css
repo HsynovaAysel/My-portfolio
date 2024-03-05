@@ -1,0 +1,386 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  font-family: "Noah", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #c19d60;
+  letter-spacing: 3px;
+  line-height: 1.75em;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1250px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+.aside-main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.aside-main aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  background-color: #ecbda0;
+  width: 10%;
+  height: 100%;
+  border-right: 1px solid #2a2a2a;
+}
+.aside-main aside .user-image {
+  border: 2px solid #c25a00;
+  margin-top: 2rem;
+  width: 70%;
+  border-radius: 50%;
+}
+.aside-main aside .user-image img {
+  height: 100%;
+  width: 100%;
+}
+.aside-main aside .username {
+  font-size: 30px;
+  color: #c25a00;
+  text-align: center;
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 1px 1px 5px white;
+}
+.aside-main aside nav {
+  width: 100%;
+}
+.aside-main aside nav ul {
+  display: flex;
+  flex-direction: column;
+}
+.aside-main aside nav ul li {
+  padding: 1rem 0;
+  border-top: 1px solid #2a2a2a;
+}
+.aside-main aside nav ul li a {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Berkshire Swash", serif;
+  color: #2a2a2a;
+  transition: all 0.5s;
+}
+.aside-main aside nav ul li:hover {
+  border-right: 5px solid #c25a00;
+}
+.aside-main aside nav ul li:hover a {
+  color: #c25a00;
+}
+.aside-main aside nav ul li.active {
+  border-right: 5px solid #c25a00;
+}
+.aside-main aside nav ul li.active a {
+  color: #c25a00;
+}
+.aside-main aside nav ul li.contact-list {
+  border-bottom: 1px solid #2a2a2a;
+}
+.aside-main main {
+  position: relative;
+  width: 90%;
+  background-image: url("../../images/pngtree-creative-business-portfolio-picture-image_1447440.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.aside-main main .gear {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  top: 100px;
+  font-size: 20px;
+  border: 1px solid #2a2a2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.aside-main main .gear .fa-gear {
+  float: left;
+  margin: 3px 20px;
+  transition: 0.6s ease-out;
+}
+.aside-main main .gear .fa-gear:hover {
+  transform: rotateZ(720deg);
+}
+.aside-main main .template-box {
+  display: block;
+  position: fixed;
+  top: 168px;
+  max-height: calc(100% - 168px);
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  width: 180px;
+  height: auto;
+  z-index: 1999;
+  padding: 15px 15px 20px;
+  border: 1px solid #d5d5d5;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.1);
+  right: 0;
+  margin-right: -160px;
+  border-right: 0;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.aside-main main .template-box p {
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Noah", sans-serif;
+}
+.aside-main main .template-box .template-style .color-box {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+}
+.aside-main main .template-box .template-style .color-box .light {
+  height: 18px;
+  width: 35px;
+  font-family: "Noah", sans-serif;
+  text-align: center;
+  border: 1px solid #2a2a2a;
+  padding: 5px 8px;
+}
+.aside-main main .template-box .template-style .color-box .pink {
+  height: 18px;
+  width: 35px;
+  border: 1px solid #2a2a2a;
+  padding: 5px 8px;
+  background-color: #ecbda0;
+}
+.aside-main main .template-box .template-style .color-box .green {
+  height: 18px;
+  width: 35px;
+  border: 1px solid #2a2a2a;
+  padding: 5px 8px;
+  background-color: #006870;
+}
+.aside-main main .template-box .template-style .color-box .orange {
+  height: 18px;
+  width: 35px;
+  border: 1px solid #2a2a2a;
+  padding: 5px 8px;
+  background-color: #c25a00;
+}
+.aside-main main .template-box .template-style .color-box .blue {
+  height: 18px;
+  width: 35px;
+  border: 1px solid #2a2a2a;
+  padding: 5px 8px;
+  background-color: #b7f0dc;
+}
+.aside-main main .template-box .template-style .color-box .dark {
+  height: 18px;
+  width: 35px;
+  font-family: "Noah", sans-serif;
+  text-align: center;
+  border: 1px solid #2a2a2a;
+  padding: 5px 8px;
+  color: white;
+  background-color: #2a2a2a;
+}
+.aside-main main .template-box .nav-position .color-box {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.aside-main main .template-box .nav-position .color-box .grey {
+  height: 18px;
+  width: 140px;
+  font-family: "Noah", sans-serif;
+  text-align: center;
+  border: 1px solid #2a2a2a;
+  padding: 5px 8px;
+  background-color: #f2f1f1;
+}
+.aside-main main .template-box.template-box-block {
+  border: 1px solid #2a2a2a;
+  margin-left: 0;
+  margin-right: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease-in-out;
+}
+.aside-main main #home .home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.aside-main main #home .home h1 {
+  font-family: "Pinyon Script", cursive;
+  font-size: 50px;
+  color: #c25a00;
+  text-shadow: 1px 1px 5px #874319;
+  font-weight: 700;
+}
+.aside-main main #home .home p {
+  font-size: 30px;
+  color: #2a2a2a;
+  font-style: italic;
+}/*# sourceMappingURL=style.css.map */
