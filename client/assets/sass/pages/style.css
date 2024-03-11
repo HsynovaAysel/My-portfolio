@@ -383,4 +383,56 @@ span {
   font-size: 30px;
   color: #2a2a2a;
   font-style: italic;
+}
+.aside-main main #about {
+  width: 1300px;
+  height: 70vh;
+  background-color: black;
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  color: white;
+  visibility: hidden;
+}
+.aside-main main #about.about-page {
+  visibility: visible;
+}
+.aside-main main #resume {
+  width: 1300px;
+  height: 70vh;
+  background-color: black;
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  color: white;
+  visibility: hidden;
+}
+.aside-main main #resume.resume-page {
+  visibility: visible;
+}
+.aside-main main #portfolio {
+  width: 1300px;
+  height: 70vh;
+  background-color: black;
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  color: white;
+  visibility: hidden;
+}
+.aside-main main #portfolio.portfolio-page {
+  visibility: visible;
+}
+.aside-main main #contact {
+  width: 1300px;
+  height: 70vh;
+  background-color: black;
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  color: white;
+  visibility: hidden;
+}
+.aside-main main #contact.contact-page {
+  visibility: visible;
 }/*# sourceMappingURL=style.css.map */
