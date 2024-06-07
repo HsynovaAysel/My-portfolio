@@ -302,6 +302,7 @@ span {
   text-align: center;
   border: 1px solid #2a2a2a;
   padding: 5px 8px;
+  cursor: pointer;
 }
 .aside-main main .template-box .template-style .color-box .pink {
   height: 18px;
@@ -309,6 +310,7 @@ span {
   border: 1px solid #2a2a2a;
   padding: 5px 8px;
   background-color: #ecbda0;
+  cursor: pointer;
 }
 .aside-main main .template-box .template-style .color-box .green {
   height: 18px;
@@ -316,6 +318,7 @@ span {
   border: 1px solid #2a2a2a;
   padding: 5px 8px;
   background-color: #006870;
+  cursor: pointer;
 }
 .aside-main main .template-box .template-style .color-box .orange {
   height: 18px;
@@ -323,6 +326,7 @@ span {
   border: 1px solid #2a2a2a;
   padding: 5px 8px;
   background-color: #c25a00;
+  cursor: pointer;
 }
 .aside-main main .template-box .template-style .color-box .blue {
   height: 18px;
@@ -330,6 +334,7 @@ span {
   border: 1px solid #2a2a2a;
   padding: 5px 8px;
   background-color: #b7f0dc;
+  cursor: pointer;
 }
 .aside-main main .template-box .template-style .color-box .dark {
   height: 18px;
@@ -340,12 +345,14 @@ span {
   padding: 5px 8px;
   color: white;
   background-color: #2a2a2a;
+  cursor: pointer;
 }
 .aside-main main .template-box .nav-position .color-box {
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   gap: 5px;
+  cursor: pointer;
 }
 .aside-main main .template-box .nav-position .color-box .grey {
   height: 18px;

@@ -52,3 +52,11 @@ contactli.addEventListener("click", function () {
   portfolioPage.classList.remove("portfolio-page");
   contactPage.classList.add("contact-page");
 });
+//  let aside =document.querySelector('aside')
+// //  let light =document.querySelector('.light')
+//  let pink =document.querySelector('.pink')
+
+//  pink.addEventListener("click", function () {
+//   aside.style.backgroundColor = "red"
+//   console.log('salam');
+// });
